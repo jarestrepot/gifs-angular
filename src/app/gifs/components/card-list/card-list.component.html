@@ -1,0 +1,7 @@
+<div class="grid grid-cols-1 lg:grid-cols-3 max-h-[37rem] overflow-y-auto gap-5">
+  <gifs-card
+    class="block rounded-lg bg-transparent shadow-[0_2px_10px_-4px_rgba(255,255,255,0.4),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+    *ngFor="let gif of gifsList"
+    [gif]="gif"
+  />
+</div>

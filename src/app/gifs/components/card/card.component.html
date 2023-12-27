@@ -1,0 +1,12 @@
+<a href="#!">
+  <!-- <img class="rounded-t-md object-fill w-full h-auto" [src]="gif.images.downsized_medium.url" [alt]="gif.title" /> -->
+  <shared-lazy-image
+    [urlImage]="gif.images.downsized_medium.url"
+    [altImage]="gif.title || 'No name'"
+  />
+</a>
+<div class="p-6">
+  <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-50">
+    {{ gif.title || 'No name' | titlecase  }}
+  </h5>
+</div>
